@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-image: url(https://wallpapercave.com/wp/wp4766635.jpg);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-left: 39px;
+
+}
+
+.navigation a {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family:'Inter';
+}
+
+.navigation ul a {
+    display: block;
+    /* align-items: center;
+    justify-content: center; */
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.inventory-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-top: 75px;
+    margin-bottom: 60px;
+    margin-left: 39px;
+}
+
+.wrapper {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inventory-cards {
+    box-shadow: 0 0 0px 4px;
+    border-radius: 1fr 1px;
+    margin-top: 50px;
+}
+
+img {
+    justify-content: center;
+    /* width: 10rem; */
+    /* height: ; */
+}
+
+.item-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 2px;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.img {
+   justify-content: center;
+   object-fit: cover;
+}
+
+#plus-symbol {
+    margin-right: 48rem;
+    margin-left: 3rem;
+}
+
+#minus-symbol {
+    margin-right: 48rem;
+    margin-left: 2rem;
+}
+#total-amount {
+    font-size: 55px;
+    margin-right: 48rem;
+}
+
+/* .container {
+
+} */
+
