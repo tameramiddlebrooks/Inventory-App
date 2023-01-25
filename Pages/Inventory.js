@@ -1,72 +1,52 @@
 function Inventory () {
+
+import React, { useState } from 'react'
+
+// import ReactDOM from 'react-dom'
+
+function Inventory () {
+
+    const [Input, updateForm] = React.useState(initialData)
+
+    const handleChange = (e) => {
+        updateForm({
+            ...Input,
+            [e.target.name]: e.target.value.trim()
+        })
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(Input);
+    };
+
     return (
-        <div>
-            <h1 className="inventory-header">Below, you can view and update your inventory.</h1>
+        <>
+        <p className="directions">
+        Use the form below to update your inventory. Update 1 item at a time and check the console to view your updates.
+            </p>
 
+        {/* item 1 */}
+        <label className="label1">
+            Item
+            <input name="Item" className="the-item" onChange={handleChange} />
+            </label>
+            <br />
 
+            <label className="label2">
+                Quantity
+                <input name="Quantity" className="the-quantity" onChange={handleChange} />
+            </label>
+            <br />
 
-               <div className="wrapper">
-                <Card
-                img="https://o.remove.bg/downloads/3542e01d-85a4-4734-a2d7-d74ba497b733/1550609-removebg-preview.png"
-                itemTitle="Oranges"
-                />
-
-
-
-
-
-
-
-                </div>
-                </div>
-
+        </>
 
     )
 }
 
-const increaseAmount = document.getElementById("increase");
-const decreaseAmount = document.getElementById("decrease");
-
-const totalAmount= document.getElementById("total-amount");
-
-let amount = 0;
-
-totalAmount.innerHTML = amount;
-
-const handleIncrease = () => {
-    amount++;
-    totalAmount.innerHTML = amount;
-};
-
-const handleDecrease = () => {
-    amount--;
-    totalAmount.innerHTML = amount;
-}
-
-increaseAmount.addEventListener("click", handleIncrease);
-decreaseAmount.addEventListener("click", handleDecrease); 
-
-
-
-
-function Card (props) {
-    return (
-        <div className="inventory-cards">
-
-            <h1 className="item-title">
-                Item: {props.itemTitle}
-            </h1>
-
-
-            <img src={props.img} className="item-image" />
-            <div className="card_body">
-
-</div>
-
-
-
- </div>
-    )
-}
+const initialData = Object.freeze({
+    Item: "",
+    Quantity: ""
+})
 
 export default Inventory;
