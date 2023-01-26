@@ -46,13 +46,6 @@ body {
     font-weight: bold;
 }
 
-
-.inventory-cards {
-    box-shadow: 0 0 0px 4px;
-    border-radius: 1fr 1px;
-    margin-top: 50px;
-}
-
 img {
     justify-content: center;
     width: 10rem;
