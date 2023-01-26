@@ -5,22 +5,35 @@ function Navbar () {
     return (
         <div>
         <nav className= "navigation">
-            <Link to="/Inventory" className="title">
+            {/* <Link to="/Inventory">
                 Inventory         
-               </Link>
+               </Link> */}
 
-            <ul className="about">
+            <ul className="nav">
+
+        {/* <li>
+            <Link to="/"></Link>
+
+        </li> */}
+
+            <li>
+                <Link to ="/Inventory" className="title">
+                    Inventory         
+                        </Link>
+                            </li>
+
+
                 <li>
                     <Link to ="/About">About</Link>
                     </li>
 
                     <li>
-                        <Link to="/???">TBD</Link>
+                        <Link to="/Quotes">Daily Quotes</Link>
                     </li>
 
-                    {/* <li>
-                        <Link to ="/Inventory">Inventory</Link>
-                    </li> */}
+                    <li>
+                        <Link to ="/EmailPage">Contact</Link>
+                    </li>
             </ul>
         </nav>
         </div>
