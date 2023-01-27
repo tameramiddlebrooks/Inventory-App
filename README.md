@@ -1,6 +1,6 @@
 # Know Your Inventory
 
-**Description**: Know Your Inventory is a React application built to allow users an easy way to keep track of inventory of various items. The app also includes a "Daily Quotes Page" created using the Type Fit Quotes API (
+**Description**: Know Your Inventory is a React application built for providing users an easy way to keep track of inventory of various items. The app also includes a "Daily Quotes" Page created using the Type Fit Quotes API (https://type.fit/api/quotes this API does not have official documentation.)
 
 **Built With**: Know Your Inventory was Built using JavaScript, CSS, HTML, and the React library.
 
